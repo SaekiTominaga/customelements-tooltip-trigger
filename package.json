@@ -1,0 +1,57 @@
+{
+	"name": "@saekitominaga/customelements-tooltip-trigger",
+	"version": "1.0.0",
+	"description": "A custom element that triggers to call the tooltip UI.",
+	"type": "module",
+	"dependencies": {
+		"@saekitominaga/customelements-tooltip": "^1.0.0",
+		"@saekitominaga/document-generate-id": "^1.0.1",
+		"@saekitominaga/document-maximum-zindex": "^1.0.1"
+	},
+	"devDependencies": {
+		"@types/w3c-css-typed-object-model-level-1": "^20180410.0.2",
+		"@typescript-eslint/eslint-plugin": "^4.10.0",
+		"@typescript-eslint/parser": "^4.10.0",
+		"brotlin": "^1.1.0",
+		"cpy-cli": "^3.1.1",
+		"eslint": "^7.16.0",
+		"eslint-config-prettier": "^7.1.0",
+		"eslint-plugin-jsdoc": "^30.7.9",
+		"npm-run-all": "^4.1.5",
+		"onchange": "^7.1.0",
+		"renamer": "^2.0.1",
+		"terser": "^5.5.1",
+		"ts-transformer-replace-paths": "^1.0.1",
+		"ttypescript": "^1.5.12",
+		"typescript": "^4.1.3"
+	},
+	"main": "dist/TooltipTrigger.mjs",
+	"types": "dist/TooltipTrigger.mjs.d.ts",
+	"scripts": {
+		"_ts-watch:tsc": "ttsc -w",
+		"_ts-watch:rename": "onchange -f add -v dist/**/*.mjs.js -- renamer --force --find .mjs.js --replace .mjs dist/**/*",
+		"_ts-watch:compress": "onchange -f add -f change -v dist/TooltipTrigger.mjs -- brotlin compress dist/TooltipTrigger.mjs -m 1",
+		"_ts-watch:minify": "onchange -f add -f change -v dist/TooltipTrigger.mjs -- terser dist/TooltipTrigger.mjs -o dist/TooltipTrigger.min.mjs -c ecma=2020 --mangle --ecma 2020 --module --source-map base=dist,filename=Tooltip.min.mjs,includeSources",
+		"_ts-watch:compress-minify": "onchange -f add -f change -v dist/TooltipTrigger.min.mjs -- brotlin compress dist/TooltipTrigger.min.mjs -m 1",
+		"_ts-watch:dts-minify": "onchange -f add -f change -v dist/TooltipTrigger.mjs.d.ts -- cpy dist/TooltipTrigger.mjs.d.ts dist --rename=TooltipTrigger.min.mjs.d.ts",
+		"ts-watch": "run-p _ts-watch:*"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/SaekiTominaga/customelements-tooltip-trigger.git"
+	},
+	"keywords": [
+		"web-components",
+		"custom-elements",
+		"tooltip"
+	],
+	"author": "Saeki Tominaga",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/SaekiTominaga/customelements-tooltip-trigger/issues"
+	},
+	"homepage": "https://github.com/SaekiTominaga/customelements-tooltip-trigger#readme",
+	"publishConfig": {
+		"access": "public"
+	}
+}
