@@ -20,7 +20,7 @@
 			});
 
 			const aElement = document.createElement('a', { is: 'x-tooltip-trigger' });
-			aElement.href = '#fn-1';
+			aElement.href = '#annotation-1';
 			const a = `
 [1]`;
 			aElement.insertAdjacentHTML('afterbegin', a);
@@ -33,10 +33,10 @@
 		<section>
 			<h2>`href` attribute</h2>
 
-			<pre><code>&lt;a is="x-tooltip-trigger" href="#fn-1"&gt;[1]&lt;/a&gt;</code></pre>
+			<pre><code>&lt;a is="x-tooltip-trigger" href="#annotation-1"&gt;[1]&lt;/a&gt;</code></pre>
 
 			<p>
-				text text <sup><a is="x-tooltip-trigger" href="#fn-1">[1]</a></sup> text text
+				text text <sup><a is="x-tooltip-trigger" href="#annotation-1">[1]</a></sup> text text
 			</p>
 		</section>
 
@@ -51,11 +51,11 @@
 		<section>
 			<h2>`data-tooltip-element` attribute</h2>
 
-			<pre><code>&lt;a is="x-tooltip-trigger" href="#fn-2" data-tooltip-element="x-tooltip"&gt;[2]&lt;/a&gt;</code></pre>
+			<pre><code>&lt;a is="x-tooltip-trigger" href="#annotation-2" data-tooltip-element="x-tooltip"&gt;[2]&lt;/a&gt;</code></pre>
 
 			<p>
 				text text
-				<sup><a is="x-tooltip-trigger" href="#fn-2" data-tooltip-element="x-tooltip">[2]</a></sup>
+				<sup><a is="x-tooltip-trigger" href="#annotation-2" data-tooltip-element="x-tooltip">[2]</a></sup>
 				text text
 			</p>
 		</section>
@@ -63,11 +63,11 @@
 		<section>
 			<h2>`data-tooltip-text` attribute</h2>
 
-			<pre><code>&lt;a is="x-tooltip-trigger" href="#fn-3" data-tooltip-close-text="閉じる"&gt;[3]&lt;/a&gt;</code></pre>
+			<pre><code>&lt;a is="x-tooltip-trigger" href="#annotation-3" data-tooltip-close-text="閉じる"&gt;[3]&lt;/a&gt;</code></pre>
 
 			<p>
 				text text
-				<sup><a is="x-tooltip-trigger" href="#fn-3" data-tooltip-close-text="閉じる">[3]</a></sup>
+				<sup><a is="x-tooltip-trigger" href="#annotation-3" data-tooltip-close-text="閉じる">[3]</a></sup>
 				text text
 			</p>
 
@@ -77,14 +77,14 @@
 		<section>
 			<h2>`data-tooltip-src` attribute</h2>
 
-			<pre><code>&lt;a is="x-tooltip-trigger" href="#fn-4" data-tooltip-close-src="data:image/svg+xml,..."&gt;[4]&lt;/a&gt;</code></pre>
+			<pre><code>&lt;a is="x-tooltip-trigger" href="#annotation-4" data-tooltip-close-src="data:image/svg+xml,..."&gt;[4]&lt;/a&gt;</code></pre>
 
 			<p>
 				text text
 				<sup
 					><a
 						is="x-tooltip-trigger"
-						href="#fn-4"
+						href="#annotation-4"
 						data-tooltip-close-src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2236%22%20height%3D%2236%22%20viewBox%3D%220%200%2036%2036%22%3E%3Cstyle%3Epath%7Bstroke%3A%23e00%3Bstroke-width%3A6px%3Bstroke-linecap%3Around%7D%3C%2Fstyle%3E%3Cpath%20d%3D%22M3%203l30%2030M3%2033L33%203%22%2F%3E%3C%2Fsvg%3E"
 						>[4]</a
 					></sup
@@ -96,19 +96,19 @@
 		<ul class="annotation">
 			<li>
 				[1]
-				<span id="fn-1">Annotation1 text text <a href="https://example.com/1">Link1</a> text <a href="https://example.com/1">Link2</a> text text</span>
+				<span id="annotation-1">Annotation1 text text <a href="https://example.com/1">Link1</a> text <a href="https://example.com/1">Link2</a> text text</span>
 			</li>
 			<li>
 				[2]
-				<span id="fn-2">Annotation2 text text <a href="https://example.com/1">Link1</a> text <a href="https://example.com/1">Link2</a> text text</span>
+				<span id="annotation-2">Annotation2 text text <a href="https://example.com/1">Link1</a> text <a href="https://example.com/1">Link2</a> text text</span>
 			</li>
 			<li>
 				[3]
-				<span id="fn-3">Annotation3 text text <a href="https://example.com/1">Link1</a> text <a href="https://example.com/1">Link2</a> text text</span>
+				<span id="annotation-3">Annotation3 text text <a href="https://example.com/1">Link1</a> text <a href="https://example.com/1">Link2</a> text text</span>
 			</li>
 			<li>
 				[4]
-				<span id="fn-4">Annotation4 text text <a href="https://example.com/1">Link1</a> text <a href="https://example.com/1">Link2</a> text text</span>
+				<span id="annotation-4">Annotation4 text text <a href="https://example.com/1">Link1</a> text <a href="https://example.com/1">Link2</a> text text</span>
 			</li>
 		</ul>
 	</body>
