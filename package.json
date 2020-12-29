@@ -31,7 +31,7 @@
 		"_ts-watch:tsc": "ttsc -w",
 		"_ts-watch:rename": "onchange -f add -v dist/**/*.mjs.js -- renamer --force --find .mjs.js --replace .mjs dist/**/*",
 		"_ts-watch:compress": "onchange -f add -f change -v dist/TooltipTrigger.mjs -- brotlin compress dist/TooltipTrigger.mjs -m 1",
-		"_ts-watch:minify": "onchange -f add -f change -v dist/TooltipTrigger.mjs -- terser dist/TooltipTrigger.mjs -o dist/TooltipTrigger.min.mjs -c ecma=2020 --mangle --ecma 2020 --module --source-map base=dist,filename=Tooltip.min.mjs,includeSources",
+		"_ts-watch:minify": "onchange -f add -f change -v dist/TooltipTrigger.mjs -- terser dist/TooltipTrigger.mjs -o dist/TooltipTrigger.min.mjs -c ecma=2020 --mangle --ecma 2020 --module --source-map base=dist,filename=TooltipTrigger.min.mjs,includeSources",
 		"_ts-watch:compress-minify": "onchange -f add -f change -v dist/TooltipTrigger.min.mjs -- brotlin compress dist/TooltipTrigger.min.mjs -m 1",
 		"_ts-watch:dts-minify": "onchange -f add -f change -v dist/TooltipTrigger.mjs.d.ts -- cpy dist/TooltipTrigger.mjs.d.ts dist --rename=TooltipTrigger.min.mjs.d.ts",
 		"ts-watch": "run-p _ts-watch:*"
