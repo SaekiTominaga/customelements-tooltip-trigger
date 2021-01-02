@@ -8,6 +8,17 @@ Implement tooltip UI component by Custom Elements.
 
 - [Demo page](https://saekitominaga.github.io/customelements-tooltip/demo.html)
 
+## Examples
+
+```
+<x-tooltip
+  open=""
+  close-text="Close"
+  close-src="/assets/tooltip-close.svg"
+>
+</x-tooltip>
+```
+
 ## Attributes
 
 <dl>

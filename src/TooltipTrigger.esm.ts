@@ -4,7 +4,7 @@ import DocumentZindex from '@saekitominaga/document-maximum-zindex';
 /**
  * Tooltip trigger
  *
- * @version 1.0.0
+ * @version 1.1.0
  */
 export default class TooltipTrigger extends HTMLAnchorElement {
 	#ZINDEX_LIMIT = 2147483647; // z-index の最大値

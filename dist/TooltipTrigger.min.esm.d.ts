@@ -1,7 +1,7 @@
 /**
  * Tooltip trigger
  *
- * @version 1.0.0
+ * @version 1.1.0
  */
 export default class TooltipTrigger extends HTMLAnchorElement {
     #private;
@@ -24,4 +24,4 @@ export default class TooltipTrigger extends HTMLAnchorElement {
      */
     private _hide;
 }
-//# sourceMappingURL=TooltipTrigger.mjs.d.ts.map
+//# sourceMappingURL=TooltipTrigger.esm.d.ts.map
