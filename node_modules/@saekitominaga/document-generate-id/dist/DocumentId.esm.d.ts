@@ -7,7 +7,7 @@ interface charactorType {
 /**
  * Generate a unique ID in Document
  *
- * @version 1.0.0
+ * @version 1.1.0
  */
 export default class {
     #private;
@@ -32,4 +32,4 @@ export default class {
     generate(): string;
 }
 export {};
-//# sourceMappingURL=DocumentId.mjs.d.ts.map
+//# sourceMappingURL=DocumentId.esm.d.ts.map

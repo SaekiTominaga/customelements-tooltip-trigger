@@ -8,7 +8,7 @@ var _LIMIT;
 /**
  * Processing related to `z-index` in the Document
  *
- * @version 1.0.0
+ * @version 1.1.0
  */
 export default class {
     constructor() {

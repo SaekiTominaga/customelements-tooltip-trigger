@@ -1,7 +1,7 @@
 /**
  * Processing related to `z-index` in the Document
  *
- * @version 1.0.0
+ * @version 1.1.0
  */
 export default class {
     #private;
@@ -14,4 +14,4 @@ export default class {
      */
     getMaximum(selectors?: string): number;
 }
-//# sourceMappingURL=DocumentZindex.mjs.d.ts.map
+//# sourceMappingURL=DocumentZindex.esm.d.ts.map

@@ -15,7 +15,7 @@ var _length, _charactors, _prefix, _trialLimit;
 /**
  * Generate a unique ID in Document
  *
- * @version 1.0.0
+ * @version 1.1.0
  */
 export default class {
     /**

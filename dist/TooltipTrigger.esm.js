@@ -12,12 +12,12 @@ var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (
     return privateMap.get(receiver);
 };
 var _ZINDEX_LIMIT, _supportCSSTypedOM, _annotateElement, _tooltipElement, _tooltipCustomElementName, _TOOLTIP_ID_PLEFIX, _MOUSELEAVE_HIDE_DELAY, _mouseleaveHideTimeoutId, _tooltipInnerElement, _tooltipCloseText, _tooltipCloseSrc;
-import DocumentId from '/customelements-tooltip-trigger/node_modules/@saekitominaga/document-generate-id/dist/DocumentId.mjs';
-import DocumentZindex from '/customelements-tooltip-trigger/node_modules/@saekitominaga/document-maximum-zindex/dist/DocumentZindex.mjs';
+import DocumentId from '/customelements-tooltip-trigger/node_modules/@saekitominaga/document-generate-id/dist/DocumentId.esm.js';
+import DocumentZindex from '/customelements-tooltip-trigger/node_modules/@saekitominaga/document-maximum-zindex/dist/DocumentZindex.esm.js';
 /**
  * Tooltip trigger
  *
- * @version 1.1.0
+ * @version 1.1.1
  */
 export default class TooltipTrigger extends HTMLAnchorElement {
     constructor() {

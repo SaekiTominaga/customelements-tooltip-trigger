@@ -1,7 +1,7 @@
 /**
  * Processing related to `z-index` in the Document
  *
- * @version 1.0.0
+ * @version 1.1.0
  */
 export default class {
 	#LIMIT = 2147483647; // z-index の最大値

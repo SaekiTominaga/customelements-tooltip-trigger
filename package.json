@@ -5,8 +5,8 @@
 	"type": "module",
 	"dependencies": {
 		"@saekitominaga/customelements-tooltip": "^1.1.0",
-		"@saekitominaga/document-generate-id": "^1.0.2",
-		"@saekitominaga/document-maximum-zindex": "^1.0.2"
+		"@saekitominaga/document-generate-id": "^1.1.0",
+		"@saekitominaga/document-maximum-zindex": "^1.1.0"
 	},
 	"devDependencies": {
 		"@types/w3c-css-typed-object-model-level-1": "^20180410.0.2",

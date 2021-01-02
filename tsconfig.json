@@ -10,8 +10,8 @@
 			{
 				"transform": "ts-transformer-replace-paths",
 				"replaceImportPaths": {
-					"^@saekitominaga/document-generate-id$": "/customelements-tooltip-trigger/node_modules/@saekitominaga/document-generate-id/dist/DocumentId.mjs",
-					"^@saekitominaga/document-maximum-zindex$": "/customelements-tooltip-trigger/node_modules/@saekitominaga/document-maximum-zindex/dist/DocumentZindex.mjs",
+					"^@saekitominaga/document-generate-id$": "/customelements-tooltip-trigger/node_modules/@saekitominaga/document-generate-id/dist/DocumentId.esm.js",
+					"^@saekitominaga/document-maximum-zindex$": "/customelements-tooltip-trigger/node_modules/@saekitominaga/document-maximum-zindex/dist/DocumentZindex.esm.js",
 				}
 			}
 		],

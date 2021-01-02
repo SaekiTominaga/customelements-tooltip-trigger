@@ -8,7 +8,7 @@ interface charactorType {
 /**
  * Generate a unique ID in Document
  *
- * @version 1.0.0
+ * @version 1.1.0
  */
 export default class {
 	#length: number;
