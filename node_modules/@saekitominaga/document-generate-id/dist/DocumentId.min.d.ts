@@ -32,4 +32,4 @@ export default class {
     generate(): string;
 }
 export {};
-//# sourceMappingURL=DocumentId.esm.d.ts.map
+//# sourceMappingURL=DocumentId.d.ts.map
