@@ -258,3 +258,4 @@ export default class Tooltip extends HTMLElement {
     }
 }
 _tooltipElement = new WeakMap(), _closeButtonElement = new WeakMap(), _closeButtonImageElement = new WeakMap(), _firstFocusableElement = new WeakMap(), _lastFocusableElement = new WeakMap(), _triggerElement = new WeakMap(), _closeButtonClickEventListener = new WeakMap(), _firstFocusableFocusEventListener = new WeakMap(), _lastFocusableFocusEventListener = new WeakMap();
+//# sourceMappingURL=Tooltip.js.map

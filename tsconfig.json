@@ -10,11 +10,12 @@
 			{
 				"transform": "ts-transformer-replace-paths",
 				"replaceImportPaths": {
-					"^@saekitominaga/document-generate-id$": "../../document-generate-id/dist/DocumentId.esm.js",
-					"^@saekitominaga/document-maximum-zindex$": "../../document-maximum-zindex/dist/DocumentZindex.esm.js",
+					"^@saekitominaga/document-generate-id$": "../../document-generate-id/dist/DocumentId.js",
+					"^@saekitominaga/document-maximum-zindex$": "../../document-maximum-zindex/dist/DocumentZindex.js",
 				}
 			}
 		],
+		"sourceMap": true,
 		"target": "ES2020",
 
 		/* Strict Checks */

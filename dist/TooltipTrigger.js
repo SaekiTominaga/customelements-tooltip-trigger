@@ -12,8 +12,8 @@ var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (
     return privateMap.get(receiver);
 };
 var _ZINDEX_LIMIT, _supportCSSTypedOM, _annotateElement, _tooltipElement, _tooltipCustomElementName, _TOOLTIP_ID_PLEFIX, _MOUSELEAVE_HIDE_DELAY, _mouseleaveHideTimeoutId, _tooltipInnerElement, _tooltipCloseText, _tooltipCloseSrc;
-import DocumentId from '../../document-generate-id/dist/DocumentId.esm.js';
-import DocumentZindex from '../../document-maximum-zindex/dist/DocumentZindex.esm.js';
+import DocumentId from '../../document-generate-id/dist/DocumentId.js';
+import DocumentZindex from '../../document-maximum-zindex/dist/DocumentZindex.js';
 /**
  * Tooltip trigger
  *
@@ -189,3 +189,4 @@ export default class TooltipTrigger extends HTMLAnchorElement {
     }
 }
 _ZINDEX_LIMIT = new WeakMap(), _supportCSSTypedOM = new WeakMap(), _annotateElement = new WeakMap(), _tooltipElement = new WeakMap(), _tooltipCustomElementName = new WeakMap(), _TOOLTIP_ID_PLEFIX = new WeakMap(), _MOUSELEAVE_HIDE_DELAY = new WeakMap(), _mouseleaveHideTimeoutId = new WeakMap(), _tooltipInnerElement = new WeakMap(), _tooltipCloseText = new WeakMap(), _tooltipCloseSrc = new WeakMap();
+//# sourceMappingURL=TooltipTrigger.js.map

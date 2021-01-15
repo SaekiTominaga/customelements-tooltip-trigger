@@ -2,9 +2,38 @@
 	"name": "@saekitominaga/customelements-tooltip-trigger",
 	"version": "1.1.2",
 	"description": "A custom element that triggers to call the tooltip UI.",
+	"keywords": [
+		"web-components",
+		"custom-elements",
+		"tooltip"
+	],
+	"homepage": "https://github.com/SaekiTominaga/customelements-tooltip-trigger#readme",
+	"bugs": {
+		"url": "https://github.com/SaekiTominaga/customelements-tooltip-trigger/issues"
+	},
+	"license": "MIT",
+	"author": "Saeki Tominaga",
+	"files": [
+		"dist",
+		"src"
+	],
 	"type": "module",
+	"browser": "dist/TooltipTrigger.js",
+	"types": "dist/TooltipTrigger.d.ts",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/SaekiTominaga/customelements-tooltip-trigger.git"
+	},
+	"scripts": {
+		"_build:tsc": "ttsc -w",
+		"_build:compress": "onchange -f add -f change -v dist/TooltipTrigger.js -- brotlin compress dist/TooltipTrigger.js -m 1",
+		"_build:minify": "onchange -f add -f change -v dist/TooltipTrigger.js -- terser dist/TooltipTrigger.js -o dist/TooltipTrigger.min.js -c ecma=2020 --mangle --ecma 2020 --module --source-map content='dist/TooltipTrigger.js.map',filename='TooltipTrigger.js',includeSources,url='TooltipTrigger.min.js.map'",
+		"_build:minify-compress": "onchange -f add -f change -v dist/TooltipTrigger.min.js -- brotlin compress dist/TooltipTrigger.min.js -m 1",
+		"_build:minify-declaration": "onchange -f add -f change -v dist/TooltipTrigger.d.ts -- cpy dist/TooltipTrigger.d.ts dist --rename=TooltipTrigger.min.d.ts",
+		"build": "run-p _build:*"
+	},
 	"dependencies": {
-		"@saekitominaga/customelements-tooltip": "^1.1.0",
+		"@saekitominaga/customelements-tooltip": "^1.2.0",
 		"@saekitominaga/document-generate-id": "^1.1.0",
 		"@saekitominaga/document-maximum-zindex": "^1.1.0"
 	},
@@ -24,31 +53,6 @@
 		"ttypescript": "^1.5.12",
 		"typescript": "^4.1.3"
 	},
-	"main": "dist/TooltipTrigger.esm.js",
-	"types": "dist/TooltipTrigger.esm.d.ts",
-	"scripts": {
-		"_ts-watch:tsc": "ttsc -w",
-		"_ts-watch:compress": "onchange -f add -f change -v dist/TooltipTrigger.esm.js -- brotlin compress dist/TooltipTrigger.esm.js -m 1",
-		"_ts-watch:minify": "onchange -f add -f change -v dist/TooltipTrigger.esm.js -- terser dist/TooltipTrigger.esm.js -o dist/TooltipTrigger.min.esm.js -c ecma=2020 --mangle --ecma 2020 --module --source-map base=dist,filename=TooltipTrigger.esm.js,includeSources",
-		"_ts-watch:compress-minify": "onchange -f add -f change -v dist/TooltipTrigger.min.esm.js -- brotlin compress dist/TooltipTrigger.min.esm.js -m 1",
-		"_ts-watch:dts-minify": "onchange -f add -f change -v dist/TooltipTrigger.esm.d.ts -- cpy dist/TooltipTrigger.esm.d.ts dist --rename=TooltipTrigger.min.esm.d.ts",
-		"ts-watch": "run-p _ts-watch:*"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/SaekiTominaga/customelements-tooltip-trigger.git"
-	},
-	"keywords": [
-		"web-components",
-		"custom-elements",
-		"tooltip"
-	],
-	"author": "Saeki Tominaga",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/SaekiTominaga/customelements-tooltip-trigger/issues"
-	},
-	"homepage": "https://github.com/SaekiTominaga/customelements-tooltip-trigger#readme",
 	"publishConfig": {
 		"access": "public"
 	}

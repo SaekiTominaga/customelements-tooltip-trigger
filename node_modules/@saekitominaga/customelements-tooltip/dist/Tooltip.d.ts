@@ -29,4 +29,4 @@ export default class Tooltip extends HTMLElement {
      */
     private _lastFocusableFocusEvent;
 }
-//# sourceMappingURL=Tooltip.esm.d.ts.map
+//# sourceMappingURL=Tooltip.d.ts.map

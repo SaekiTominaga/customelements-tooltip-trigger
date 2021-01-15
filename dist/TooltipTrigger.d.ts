@@ -24,4 +24,4 @@ export default class TooltipTrigger extends HTMLAnchorElement {
      */
     private _hide;
 }
-//# sourceMappingURL=TooltipTrigger.esm.d.ts.map
+//# sourceMappingURL=TooltipTrigger.d.ts.map
