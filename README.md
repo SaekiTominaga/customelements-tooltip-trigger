@@ -12,7 +12,7 @@ A custom element that triggers to call the tooltip UI.
 
 ## Examples
 
-```
+```HTML
 <a is="x-tooltip-trigger"
   href="#annotation-1"
   data-tooltip-element="x-tooltip"
