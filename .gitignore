@@ -1,7 +1,2 @@
-/node_modules/*
-!/node_modules/@saekitominaga/
-/node_modules/@saekitominaga/*
-!/node_modules/@saekitominaga/customelements-tooltip/
-!/node_modules/@saekitominaga/document-generate-id/
-!/node_modules/@saekitominaga/document-maximum-zindex/
+/node_modules/
 tsconfig.tsbuildinfo
