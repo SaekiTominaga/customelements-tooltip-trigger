@@ -1,7 +1,5 @@
 /**
  * Tooltip trigger
- *
- * @version 1.1.2
  */
 export default class TooltipTrigger extends HTMLAnchorElement {
     #private;

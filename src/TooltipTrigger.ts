@@ -3,8 +3,6 @@ import DocumentZindex from '@saekitominaga/document-maximum-zindex';
 
 /**
  * Tooltip trigger
- *
- * @version 1.1.2
  */
 export default class TooltipTrigger extends HTMLAnchorElement {
 	#ZINDEX_LIMIT = 2147483647; // z-index の最大値
@@ -209,10 +207,12 @@ export default class TooltipTrigger extends HTMLAnchorElement {
 	 * ツールチップの非表示処理を行う
 	 */
 	private _hide(): void {
-		const tooltipElement = <HTMLElement>this.#tooltipElement;
+		const tooltipElement = this.#tooltipElement;
 
 		this.setAttribute('aria-expanded', 'false');
 		this.removeAttribute('aria-describedby');
-		tooltipElement.removeAttribute('open');
+		if (tooltipElement !== null) {
+			tooltipElement.removeAttribute('open');
+		}
 	}
 }

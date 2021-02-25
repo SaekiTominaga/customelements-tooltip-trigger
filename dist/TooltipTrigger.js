@@ -16,8 +16,6 @@ import DocumentId from '../../document-generate-id/dist/DocumentId.js';
 import DocumentZindex from '../../document-maximum-zindex/dist/DocumentZindex.js';
 /**
  * Tooltip trigger
- *
- * @version 1.1.2
  */
 export default class TooltipTrigger extends HTMLAnchorElement {
     constructor() {
@@ -185,7 +183,9 @@ export default class TooltipTrigger extends HTMLAnchorElement {
         const tooltipElement = __classPrivateFieldGet(this, _tooltipElement);
         this.setAttribute('aria-expanded', 'false');
         this.removeAttribute('aria-describedby');
-        tooltipElement.removeAttribute('open');
+        if (tooltipElement !== null) {
+            tooltipElement.removeAttribute('open');
+        }
     }
 }
 _ZINDEX_LIMIT = new WeakMap(), _supportCSSTypedOM = new WeakMap(), _annotateElement = new WeakMap(), _tooltipElement = new WeakMap(), _tooltipCustomElementName = new WeakMap(), _TOOLTIP_ID_PLEFIX = new WeakMap(), _MOUSELEAVE_HIDE_DELAY = new WeakMap(), _mouseleaveHideTimeoutId = new WeakMap(), _tooltipInnerElement = new WeakMap(), _tooltipCloseText = new WeakMap(), _tooltipCloseSrc = new WeakMap();
