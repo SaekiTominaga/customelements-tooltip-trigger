@@ -12,8 +12,8 @@ var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (
     return privateMap.get(receiver);
 };
 var _ZINDEX_LIMIT, _supportCSSTypedOM, _annotateElement, _tooltipElement, _tooltipCustomElementName, _TOOLTIP_ID_PLEFIX, _MOUSELEAVE_HIDE_DELAY, _mouseleaveHideTimeoutId, _tooltipInnerElement, _tooltipCloseText, _tooltipCloseSrc;
-import DocumentId from '../../document-generate-id/dist/DocumentId.js';
-import DocumentZindex from '../../document-maximum-zindex/dist/DocumentZindex.js';
+import DocumentId from '../../document-generate-id/dist/DocumentGenerateId.js';
+import DocumentZindex from '../../document-maximum-zindex/dist/DocumentMaximumZindex.js';
 /**
  * Tooltip trigger
  */
