@@ -26,12 +26,8 @@
 		"url": "git+https://github.com/SaekiTominaga/customelements-tooltip-trigger.git"
 	},
 	"scripts": {
-		"_build:tsc": "ttsc -w",
-		"_build:compress": "onchange -f add -f change -v dist/TooltipTrigger.js -- brotlin compress {{file}} -m 1",
-		"_build:minify": "onchange -f add -f change -v dist/TooltipTrigger.js -- terser {{file}} -o {{fileDir}}/{{fileBaseNoExt}}.min.js -c ecma=2020 --mangle --ecma 2020 --module --source-map content='{{fileDir}}/{{fileBaseNoExt}}.js.map',filename='{{fileBaseNoExt}}.js',includeSources,url='{{fileBaseNoExt}}.min.js.map'",
-		"_build:minify-compress": "onchange -f add -f change -v dist/TooltipTrigger.min.js -- brotlin compress {{file}} -m 1",
-		"_build:minify-declaration": "onchange -f add -f change -v dist/TooltipTrigger.d.ts -- cpy {{file}} dist --rename=TooltipTrigger.min.d.ts",
-		"build": "run-p _build:*"
+		"build": "ttsc",
+		"watch": "ttsc -w"
 	},
 	"dependencies": {
 		"@saekitominaga/customelements-tooltip": "^1.2.0",
@@ -42,14 +38,9 @@
 		"@types/w3c-css-typed-object-model-level-1": "^20180410.0.2",
 		"@typescript-eslint/eslint-plugin": "^4.15.2",
 		"@typescript-eslint/parser": "^4.15.2",
-		"brotlin": "^1.1.0",
-		"cpy-cli": "^3.1.1",
 		"eslint": "^7.20.0",
 		"eslint-config-prettier": "^8.1.0",
 		"eslint-plugin-jsdoc": "^32.2.0",
-		"npm-run-all": "^4.1.5",
-		"onchange": "^7.1.0",
-		"terser": "^5.6.0",
 		"ts-transformer-replace-paths": "^1.0.1",
 		"ttypescript": "^1.5.12",
 		"typescript": "^4.2.2"
