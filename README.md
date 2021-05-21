@@ -30,12 +30,12 @@ A custom element that triggers to call the tooltip UI.
 ## Attributes
 
 <dl>
-<dt>href [required]</dt>
+<dt><code>href</code> [required]</dt>
 <dd>URL hash value of the element that contains the content to be displayed in the tooltip. (e.g. "#annotation-1" )</dd>
-<dt>data-tooltip-element [optional]</dt>
+<dt><code>data-tooltip-element</code> [optional]</dt>
 <dd>The text of the close button in the tooltip (Image alternative text).</dd>
-<dt>data-tooltip-close-text [optional]</dt>
+<dt><code>data-tooltip-close-text</code> [optional]</dt>
 <dd>The text of the close button in the tooltip (Image alternative text).</dd>
-<dt>data-tooltip-close-src [optional]</dt>
+<dt><code>data-tooltip-close-src</code> [optional]</dt>
 <dd>The address of the image resource for the close button in the tooltip.</dd>
 </dl>
